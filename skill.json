@@ -1,0 +1,39 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "ja-JP": {
+          "summary": "上田ファン王決定戦の予想問題を出題します。",
+          "examplePhrases": [
+            "アレクサ、上田ファン王決定戦を開いて"
+          ],
+          "name": "alexa-ueda-fun-oh-ketteisen",
+          "description": "上田ファン王決定戦の予想問題を出題します。",
+          "smallIconUri": "",
+          "largeIconUri": ""
+        }
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "上田ファン王決定戦の予想問題を出題します。「上田ファン王決定戦を開いて」と話しかけてください。",
+      "category": "MOVIE_AND_TV_KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": [
+        "JP"
+      ]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom"
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

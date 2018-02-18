@@ -1,0 +1,33 @@
+{
+  "interactionModel":{
+    "languageModel":{
+      "invocationName":"上田ファン王決定戦",
+      "types":[],
+      "intents":[
+        {
+          "name": "Quiz",
+          "samples": [
+            "上田ファン王",
+            "上田ファン王決定戦",
+            "カリカリくん",
+            "上田ファン王を開いて",
+            "上田ファン王決定戦を開いて",
+            "カリカリくんを開いて"
+          ]
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        }
+      ]
+    }
+  }
+}
