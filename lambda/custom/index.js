@@ -1,6 +1,8 @@
 'use strict';
 var Alexa = require("alexa-sdk");
 
+var Quiz = require("./quiz");
+
 var APP_ID = process.env.APP_ID;
 
 exports.handler = function(event, context) {
@@ -15,7 +17,10 @@ var handlers = {
     this.emit('Quiz');
   },
   'Quiz': function () {
-    var msg = '「遅い」という状況に対して上田がよく使う、季節の料理を使った例えツッコミといえば? 正解は「11月に冷やし中華はじめましたか！」です。';
+    var quiz = Quiz.all[Math.floor(Math.random() * Quiz.all.length)];
+
+    var msg = quiz.question + " 正解は「" + quiz.answer + "」です。";
+
     this.emit(':tell', msg);
   },
   'SessionEndedRequest' : function() {
